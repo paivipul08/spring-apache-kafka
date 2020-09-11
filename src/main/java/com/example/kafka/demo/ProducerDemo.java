@@ -1,4 +1,4 @@
-package com.example.kafka.config;
+package com.example.kafka.demo;
 
 import java.util.Properties;
 
@@ -10,10 +10,8 @@ import org.apache.kafka.clients.producer.RecordMetadata;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 public class ProducerDemo {
 	
 	private static Logger logger = LoggerFactory.getLogger(ProducerDemo.class);
@@ -55,7 +53,7 @@ public class ProducerDemo {
 	 * to view the records run the command
 	 * kafka-console-consumer --bootstrap-server localhost:9092 --topic first_topic --group my-third-application
 	 */
-	@Bean
+//	@Bean
 	public void producerCallback() {
 		logger.info("Creating a Producer with Callback");
 		//create producer properties
@@ -95,7 +93,7 @@ public class ProducerDemo {
 	 * Creating a producer with key
 	 * This gaurantees that the value with the same key shall always go on to the same partition
 	 */
-	@Bean
+//	@Bean
 	public void producerKey() {
 		logger.info("Creating a Producer with Key");
 		//create producer properties

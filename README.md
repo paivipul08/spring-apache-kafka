@@ -95,3 +95,7 @@ E:\kafka_2.12-2.5.0>kafka-consumer-groups --bootstrap-server localhost:9092 --gr
 ```
 ---
 
+#### References
+https://reflectoring.io/spring-boot-kafka/
+https://www.baeldung.com/spring-kafka
+https://docs.spring.io/spring-kafka/

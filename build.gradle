@@ -14,6 +14,15 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	compile group: 'org.apache.kafka', name: 'kafka-clients', version: '2.6.0'
+	
+	//compile group: 'org.apache.kafka', name: 'kafka-clients', version: '2.6.0'
+	
+	// https://mvnrepository.com/artifact/org.springframework.kafka/spring-kafka
+	compile group: 'org.springframework.kafka', name: 'spring-kafka', version: '2.5.5.RELEASE'
+	
+	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.11.2'
+
+	
+	
 }
 
